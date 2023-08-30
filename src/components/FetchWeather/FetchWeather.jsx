@@ -20,7 +20,6 @@ export function FetchWeater() {
         }
         FetchWeater()
     },[])
-    console.log("Her er vejr-dataen",weatherData);
 
     return(
         <>
