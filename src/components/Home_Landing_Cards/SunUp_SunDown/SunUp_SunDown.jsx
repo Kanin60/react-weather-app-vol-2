@@ -7,12 +7,12 @@ export function SunUp_SunDown(props) {
     return (
         <section className={SunUpDownStyle.sunUpDown}>
             <div className={SunUpDownStyle.sunUpDownIcons} >
+                <h3 style={{ Textalign: 'center' }}>  { props.solnedgang && props.solnedgang } </h3>
                 <TbSunrise alt="Solnedgang" />
-                <TbSunset alt="Solopgang" />
             </div>
-            <div>
-                <h3 style={{ Textalign: 'center' }}> Solopgang  { props.solopgang && props.solopgang }  </h3>
-                <h3 style={{ Textalign: 'center' }}> Solnedgang  { props.solnedgang && props.solnedgang } </h3>
+            <div className={SunUpDownStyle.sunUpDownIcons}>
+                <h3 style={{ Textalign: 'center' }}>  { props.solopgang && props.solopgang }  </h3>
+                <TbSunset alt="Solopgang" />
             </div>
         </section>
     )
