@@ -1,5 +1,6 @@
 import './App.css'
 // import { Wrapper } from './components/Wrapper/Wrapper'
+import { Logo } from './components/Home_Landing_Cards/Logo/Logo'
 import { FetchWeater } from './components/FetchWeather/FetchWeather'
 import { CityHeader } from './components/Home_Landing_Cards/City/CityHeader'
 import { Rain } from './components/Home_Landing_Cards/Rain/Rain'
@@ -13,14 +14,14 @@ function App() {
 
   return (
     <>
-      <FetchWeater/>
-      <CityHeader/>
-      <Temperature/>
-      <WindSpeed/>
-      <Rain/>
-      <WeatherIcon/>
-      <SunUp_SunDown/>
-      <WeatherIcons/>
+      <Logo />
+      <FetchWeater />
+      <CityHeader />
+      <Temperature />
+      <WindSpeed />
+      <Rain />
+      <WeatherIcon />
+      <SunUp_SunDown />
     </>
   )
 }
