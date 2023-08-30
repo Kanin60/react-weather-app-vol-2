@@ -7,6 +7,7 @@ import { SunUp_SunDown } from './components/Home_Landing_Cards/SunUp_SunDown/Sun
 import { Temperature } from './components/Home_Landing_Cards/Temperature/Temperature'
 import { WeatherIcon } from './components/Home_Landing_Cards/Weather_Icon/WeatherIcon'
 import { WindSpeed } from './components/Home_Landing_Cards/Wind_Speed/WindSpeed'
+import {WeatherIcons} from './WeatherIcons/WeatherIcons'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
       <Rain/>
       <WeatherIcon/>
       <SunUp_SunDown/>
+      <WeatherIcons/>
     </>
   )
 }
