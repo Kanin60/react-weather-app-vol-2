@@ -1,4 +1,4 @@
-import WrapperStyle from '../Wrapper/Wrapper.module.scss'
+import WrapperStyle from './Wrapper.module.scss'
 
 export function Wrapper({ title, children }) {
 
