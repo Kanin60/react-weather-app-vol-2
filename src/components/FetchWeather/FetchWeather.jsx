@@ -22,16 +22,17 @@ export function FetchWeater() {
     },[])
 
     console.log("Her er alt data fra url'en", weatherData);
+    // console.log("Er der et nummer?", weatherData.hourly.weathercode[1])
 
     return(
         <>
             {weatherData && 
             <>
-                <Rain regn={weatherData.hourly.precipitation} mm={weatherData.hourly_units.precipitation}/>
                 <Temperature temperatur={weatherData.hourly.temperature_2m} grader={weatherData.hourly_units.temperature_2m}/>
                 <WindSpeed vindhastighed={weatherData.hourly.windspeed_10m} km={weatherData.hourly_units.windspeed_10m} vindretning={weatherData.hourly.winddirection_10m} graderRetning={weatherData.hourly_units.winddirection_10m}/>
+                <Rain regn={weatherData.hourly.precipitation} mm={weatherData.hourly_units.precipitation}/>
+                <WeatherIcon weathercode={weatherData.hourly.weathercode}/>
                 <SunUp_SunDown solopgang={weatherData.daily.sunrise} solnedgang={weatherData.daily.sunset}/>
-                <WeatherIcon weathercode={weatherData.daily.weathercode}/>
             </> }
         </>
     )
