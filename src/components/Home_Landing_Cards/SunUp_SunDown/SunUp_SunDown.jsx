@@ -7,11 +7,12 @@ export function SunUp_SunDown(props) {
     return (
         <section className={SunUpDownStyle.sunUpDown}>
             <div className={SunUpDownStyle.sunUpDownIcons} >
-                <h3 style={{ Textalign: 'center' }}>  { props.solnedgang && props.solnedgang } </h3>
+                <h3 style={{ Textalign: 'center' }}>  { props.solopgang && props.solopgang[0].substring(11)}  </h3>
                 <TbSunrise alt="Solnedgang" />
             </div>
             <div className={SunUpDownStyle.sunUpDownIcons}>
-                <h3 style={{ Textalign: 'center' }}>  { props.solopgang && props.solopgang }  </h3>
+                <h3 style={{ Textalign: 'center' }}>  { props.solnedgang && props.solnedgang[0].substring(11) } </h3> {/* substring: fjerner alle tegn op til 11*/}
+
                 <TbSunset alt="Solopgang" />
             </div>
         </section>
