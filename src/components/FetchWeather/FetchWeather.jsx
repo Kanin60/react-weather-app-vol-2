@@ -25,11 +25,11 @@ export function FetchWeater() {
         <>
             {weatherData && 
             <>
-                <Rain regn={weatherData.hourly.precipitation} mm={weatherData.hourly_units.precipitation}/>
                 <Temperature temperatur={weatherData.hourly.temperature_2m} grader={weatherData.hourly_units.temperature_2m}/>
                 <WindSpeed vindhastighed={weatherData.hourly.windspeed_10m} km={weatherData.hourly_units.windspeed_10m} vindretning={weatherData.hourly.winddirection_10m} graderRetning={weatherData.hourly_units.winddirection_10m}/>
-                <SunUp_SunDown solopgang={weatherData.daily.sunrise} solnedgang={weatherData.daily.sunset}/>
+                <Rain regn={weatherData.hourly.precipitation} mm={weatherData.hourly_units.precipitation}/>
                 <WeatherIcon />
+                <SunUp_SunDown solopgang={weatherData.daily.sunrise} solnedgang={weatherData.daily.sunset}/>
             </> }
         </>
     )
