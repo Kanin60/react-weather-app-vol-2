@@ -15,11 +15,13 @@ export function FetchWeater() {
     // Vi bruger useEffect så dataen kun bliver fetchet en gang
     useEffect(() => {
         const FetchWeater = () => {
-            const url = "https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&hourly=temperature_2m,precipitation,windspeed_10m,winddirection_10m&daily=sunrise,sunset&timezone=Europe%2FBerlin&forecast_days=1"
+            const url = "https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&hourly=temperature_2m,precipitation,weathercode,windspeed_10m,winddirection_10m&daily=sunrise,sunset&timezone=Europe%2FBerlin&forecast_days=1"
             fetch(url).then(res => res.json()).then(data => setWeatherDate(data))
         }
         FetchWeater()
     },[])
+
+    console.log("Her er alt data fra url'en", weatherData);
 
     return(
         <>
@@ -27,9 +29,9 @@ export function FetchWeater() {
             <>
                 <Rain regn={weatherData.hourly.precipitation} mm={weatherData.hourly_units.precipitation}/>
                 <Temperature temperatur={weatherData.hourly.temperature_2m} grader={weatherData.hourly_units.temperature_2m}/>
-                <SunUp_SunDown solopgang={weatherData.daily.sunrise} solnedgang={weatherData.daily.sunset}/>
-                <WeatherIcon />
                 <WindSpeed vindhastighed={weatherData.hourly.windspeed_10m} km={weatherData.hourly_units.windspeed_10m} vindretning={weatherData.hourly.winddirection_10m} graderRetning={weatherData.hourly_units.winddirection_10m}/>
+                <SunUp_SunDown solopgang={weatherData.daily.sunrise} solnedgang={weatherData.daily.sunset}/>
+                <WeatherIcon weathercode={weatherData.daily.weathercode}/>
             </> }
         </>
     )

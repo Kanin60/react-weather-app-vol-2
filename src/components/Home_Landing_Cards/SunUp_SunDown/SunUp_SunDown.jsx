@@ -2,7 +2,6 @@ import SunUpDownStyle from './SunUp_SunDown.module.scss'
 import{TbSunrise, TbSunset} from 'react-icons/tb'
 
 export function SunUp_SunDown(props) {
-    console.log(props.solopgang);
 
     return (
         <section className={SunUpDownStyle.sunUpDown}>
