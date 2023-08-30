@@ -1,4 +1,5 @@
 import './App.css'
+import { FetchWeater } from './components/FetchWeather/FetchWeather'
 import { CityHeader } from './assets/Components/Home_Landing_Cards/City/CityHeader'
 import { Rain } from './assets/Components/Home_Landing_Cards/Rain/Rain'
 import { SunUp_SunDown } from './assets/Components/Home_Landing_Cards/SunUp_SunDown/SunUp_SunDown'
@@ -10,6 +11,7 @@ function App() {
 
   return (
     <>
+      <FetchWeater/>
       <CityHeader/>
       <Temperature/>
       <WindSpeed/>
