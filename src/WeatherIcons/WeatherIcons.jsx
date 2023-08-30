@@ -10,6 +10,7 @@ import{TiWeatherWindyCloudy}from 'react-icons/ti';
 import{TiWeatherWindy} from 'react-icons/ti'
 
 
+
 export const WeatherIcons=()=>{
 
 
