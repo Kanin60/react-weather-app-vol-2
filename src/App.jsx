@@ -1,12 +1,15 @@
 import './App.css'
-import {WeatherIcons} from './WeatherIcons/WeatherIcons'
+import {WeatherIcons} from './components/WeatherIcons/WeatherIcons'
+import{FetchLocation} from './components/FetchLocation/FetchLocation'
 
 function App() {
 
   return (
-    <>
-      <WeatherIcons/>
-    </>
+    <div>
+        <WeatherIcons/>
+        <FetchLocation/>
+    </div>
+      
   )
 }
 
