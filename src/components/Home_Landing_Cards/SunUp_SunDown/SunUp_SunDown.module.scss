@@ -1,13 +1,22 @@
-.sunUpDown{
+.sunUpDown {
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 
 }
-.sunUpDownIcons{
+
+.sunUpDownIcons {
 
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 50px 50px 50px;
+
+    svg {
+        height: 3rem;
+        width: 100%;
+    }
 }
