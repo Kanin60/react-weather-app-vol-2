@@ -1,5 +1,5 @@
 import './App.css'
-import {WeatherIcons} from './Weather/WeatherIcons'
+import {WeatherIcons} from './WeatherIcons/WeatherIcons'
 
 function App() {
 
