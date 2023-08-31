@@ -64,14 +64,14 @@ export function FetchLocation() {
 
   return (
     <div>
-      <h1>Location</h1>
+      {/* <h1>Location</h1> */}
       {loading ? (
         <p>Loading...</p>
       ) : (
         <div>
-          <p>Latitude: {lat}</p>
-          <p>Longitude: {long}</p>
-          <p> {city.data.city}</p>
+          {/* <p>Latitude: {lat}</p>
+          <p>Longitude: {long}</p> */}
+          <h1> {city.data.city}</h1>
         </div>
       )}
     </div>
