@@ -1,17 +1,20 @@
+// import af styling
 import './App.css'
-
-// import { Wrapper } from './components/Wrapper/Wrapper'
+// import af components
 import { Logo } from './components/Home_Landing_Cards/Logo/Logo'
 import { FetchWeater } from './components/FetchWeather/FetchWeather'
-import{FetchLocation} from './components/FetchLocation/FetchLocation'
+import { LocationButton } from './components/LocationButton/LocationButton';
+import { FetchLocation } from './components/FetchLocation/FetchLocation';
 
 function App() {
+
 
   return (
     <>
       <Logo /> 
-      <FetchLocation/>
+      <FetchLocation />
       <FetchWeater />
+      <LocationButton />
     </>
   )
 }
