@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import style from '../FetchLocation/FetchLocation.module.scss'
+
 
 // Komponenten FetchLocation
 export function FetchLocation() {
@@ -71,7 +73,7 @@ export function FetchLocation() {
         <div>
           {/* <p>Latitude: {lat}</p>
           <p>Longitude: {long}</p> */}
-          <h1> {city.data.city}</h1>
+          <h1 className={style.Header}> {city.data.city}</h1>
         </div>
       )}
     </div>

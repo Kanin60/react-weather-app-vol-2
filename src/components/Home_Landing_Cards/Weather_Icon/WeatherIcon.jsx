@@ -1,4 +1,5 @@
 import {TiWeatherCloudy, TiWeatherDownpour, TiWeatherNight, TiWeatherPartlySunny, TiWeatherShower, TiWeatherSnow, TiWeatherStormy, TiWeatherSunny, TiWeatherWindyCloudy, TiWeatherWindy} from 'react-icons/ti';
+import style from '../Weather_Icon/WeatherIcon.module.scss'
 
 export function WeatherIcon(props) {
 
@@ -100,7 +101,7 @@ export function WeatherIcon(props) {
 
     return (
         <section>
-            <p>{currentWeather(props.weathercode[currentTime])}</p>
+            <p className={style.BigIcon}>{currentWeather(props.weathercode[currentTime])}</p>
         </section>
     )
 }
