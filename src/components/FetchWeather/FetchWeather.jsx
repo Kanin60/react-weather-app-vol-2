@@ -21,7 +21,7 @@ export function FetchWeater() {
         FetchWeater()
     },[])
 
-    console.log("Her er alt data fra url'en", weatherData);
+    // console.log("Her er alt data fra url'en", weatherData);
     // console.log("Er der et nummer?", weatherData.hourly.weathercode[1])
 
     return(

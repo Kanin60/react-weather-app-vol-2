@@ -13,7 +13,7 @@ export function FetchLocation() {
   // useEffect køres, når komponenten vises
   useEffect(() => {
   // Funktion til at hente vores positionsdata
-  async function fetchLocation() {
+    async function fetchLocation() {
       try {
        // Hent vores position fra enheden
         const position = await getCurrentPosition();
@@ -41,7 +41,7 @@ export function FetchLocation() {
     fetchLocation();
 
   }, []);// Tomt array betyder, at useEffect kun køres ved montering
-      console.log('hej',city);
+      // console.log('hej',city);
   
   function getCurrentPosition() {
     return new Promise((resolve, reject) => {
