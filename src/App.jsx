@@ -10,10 +10,10 @@ function App() {
 
   return (
     <>
-      <Logo />
+      <Logo /> 
+      <FetchLocation/>
       <FetchWeater />
       <WeatherIcons/>
-      <FetchLocation/>
     </>
   )
 }
