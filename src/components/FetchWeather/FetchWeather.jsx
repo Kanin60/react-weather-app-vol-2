@@ -4,7 +4,7 @@ import { Rain } from "../Home_Landing_Cards/Rain/Rain";
 import { Temperature } from "../Home_Landing_Cards/Temperature/Temperature";
 import { SunUp_SunDown } from "../Home_Landing_Cards/SunUp_SunDown/SunUp_SunDown";
 import { WindSpeed } from "../Home_Landing_Cards/Wind_Speed/WindSpeed";
-import { WeatherIcon } from "../Home_Landing_Cards/Weather_Icon/WeatherIcon";//Jeg ved ikke hvordan vi skal denne endnu
+import { WeatherIcon } from "../Home_Landing_Cards/Weather_Icon/WeatherIcon";
 
 //Her starter funktionen FetchWeater, som vi exportere til App.jsx
 export function FetchWeater() {
