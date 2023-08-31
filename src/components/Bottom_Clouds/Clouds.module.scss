@@ -1,0 +1,65 @@
+
+.cloudContainer{
+    display: block;
+    position: absolute;
+    bottom: -32vh;
+    // left: -100px;
+
+}
+
+.downWithTheClouds {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+
+}
+
+.bottomCloudsOne {
+    width: 30%;
+    filter: drop-shadow(
+            /*højre -->*/
+            10px
+            /*ned ad-->*/
+            50px
+            /*gennesigtighed-->*/
+            10px rgb(0 1 1 / 0.7));
+    filter: blur(1px);
+    animation: cloud 12s infinite ease-in-out, jump 1.5s infinite ease-in-out;
+
+}
+
+.bottomCloudsTwo {
+    
+    width: 30%;
+    transform: rotate(180deg);
+    filter: blur(1px);
+    animation: cloud 1s infinite ;
+    animation: jump 1.5s infinite ease-in-out;
+}
+
+@keyframes cloud {
+    0% {
+        transform: translateX(-200vh);
+    }
+
+    100% {
+        transform: translateX(200vh);
+    }
+
+}
+
+@keyframes jump {
+
+    0% {
+        translate: 0 0vw;
+    }
+
+    50% {
+        translate: 0 0.35vw;
+    }
+
+    100% {
+        translate: 0 0vw;
+    }
+}
