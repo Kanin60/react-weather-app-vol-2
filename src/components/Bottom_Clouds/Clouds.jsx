@@ -5,12 +5,8 @@ export function BottomClouds() {
     return (
         <section className={cloudStyle.cloudContainer}>
             <div className={cloudStyle.downWithTheClouds}>
-                {/* <div> */}
-                    <img src={Clouds} alt="Bottom Clouds" className={cloudStyle.bottomCloudsOne} />
-                {/* </div> */}
-                {/* <div> */}
-                    <img src={Clouds} alt="Bottom Clouds" className={cloudStyle.bottomCloudsTwo} />
-                {/* </div> */}
+                <img src={Clouds} alt="Bottom Clouds" className={cloudStyle.bottomCloudsOne} />
+                <img src={Clouds} alt="Bottom Clouds" className={cloudStyle.bottomCloudsTwo} />
             </div>
         </section>
     )

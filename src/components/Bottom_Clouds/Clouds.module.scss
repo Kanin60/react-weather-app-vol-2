@@ -1,7 +1,6 @@
 
 .cloudContainer{
     display: block;
-    // left: -100px;
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -9,11 +8,7 @@
 }
 
 .downWithTheClouds {
-    // display: flex;
-    // flex-direction: row;
-    // justify-content: space-between;
-    position: relative;
-    
+    position: relative;   
 }
 
 .bottomCloudsOne {
@@ -31,22 +26,10 @@
     top: 0;
     right: -500px;
     width: 100%;
-    // transform: rotate(180deg);
     filter: blur(1px);
-    // animation: cloud 1s infinite ;
     animation: jump 1.5s infinite ease-in-out;
 }
 
-// @keyframes cloud {
-//     0% {
-//         transform: translateX(-200vh);
-//     }
-
-//     100% {
-//         transform: translateX(200vh);
-//     }
-
-// }
 
 @keyframes jump {
 
