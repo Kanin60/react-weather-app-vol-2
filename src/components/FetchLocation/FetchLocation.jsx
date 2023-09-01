@@ -2,6 +2,8 @@ import { getCurrentPosition } from "../../Helpers";
 // import af hooks og library
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import style from '../FetchLocation/FetchLocation.module.scss'
+
 
 export function FetchLocation(){
     // Tilstande til at gemme oplysninger i komponenten
@@ -53,14 +55,16 @@ export function FetchLocation(){
             return '';
         }
     }
-    
-    
-    return(
-        <>
-            {loading ? 
-                ( <p>Loading...</p> ) : 
-                ( <h1> {city.data.city}</h1> )
-            }
-        </>
-    )
+
+  }
+
+  return (
+    <>
+      {loading ? (
+        <p>Loading...</p>
+      ) : (
+          <h1 className={style.Header}> {city.data.city}</h1>
+      )}
+    </>
+  );
 }
