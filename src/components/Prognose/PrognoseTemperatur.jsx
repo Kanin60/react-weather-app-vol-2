@@ -9,14 +9,14 @@ export const PrognoseTemperatur = (props) => {
             props.temperaturMin &&
             props.temperaturMin.map((item, index)=>{
                 return(
-                    <p key={index}>Her skal min temp være: {item} </p>
+                    <p key={index}>{item}°C</p>
                 )}
             )}
             { 
             props.temperaturMax &&
             props.temperaturMax.map((item, index)=>{
                 return(
-                    <p key={index}> max temp{item} </p>
+                    <p key={index}> {item}°C</p>
                 )}
             )}
         </section>

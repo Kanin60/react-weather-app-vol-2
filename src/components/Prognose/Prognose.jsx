@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { PrognoseIcon } from "./PrognoseIcon"
 import { PrognoseTemperatur } from "./PrognoseTemperatur";
+import { PrognoseRain } from "./PrognoseRain";
 // import { PrognoseRain } from "./PrognoseRain";
 
 
@@ -22,7 +23,8 @@ export function Pronose(){
             { pronoseData && pronoseData.daily && 
                 <>
                     <PrognoseIcon weathercode={pronoseData.daily.weathercode} />
-                    <PrognoseTemperatur temperaturMin={pronoseData.daily.temperature_2m_min} temperaturMax={pronoseData.daily.temperature_2m_max}/>
+                    <PrognoseTemperatur temperaturMin={pronoseData.daily.temperature_2m_min} temperaturMax={pronoseData.daily.temperature_2m_max} />
+                    <PrognoseRain regnVejr={pronoseData.daily.precipitation_sum}/>
                 </>
             }
         </>
