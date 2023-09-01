@@ -56,7 +56,7 @@ export function FetchLocation(){
         }
     }
 
-  }
+  
 
   return (
     <>
