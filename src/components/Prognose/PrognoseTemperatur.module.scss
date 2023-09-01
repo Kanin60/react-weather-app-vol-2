@@ -1,0 +1,13 @@
+.minMaxTempSection {
+    display: flex;
+    flex-direction: row;
+
+    p {
+        font-size: 6vw;
+    }
+
+    svg {
+        margin: 0 10px 0 0;
+        // width: 100%;
+    }
+}

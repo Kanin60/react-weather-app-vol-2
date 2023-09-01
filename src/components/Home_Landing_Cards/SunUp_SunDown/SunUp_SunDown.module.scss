@@ -7,14 +7,27 @@
 
 }
 
+<<<<<<< Updated upstream
 .sunUpDownIcons {
+=======
+.sunUpDownIcons,
+.prognoseIcon,
+.minMaxTemp {
+>>>>>>> Stashed changes
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+<<<<<<< Updated upstream
     margin: 0px 50px 50px 50px;
 
+=======
+    margin: 0px 0px 20px 0px;
+    // height: 100%;
+    // width: 100%;
+    
+>>>>>>> Stashed changes
     svg {
         height: 3rem;
         width: 100%;
