@@ -4,7 +4,7 @@ import { PrognoseTemperatur } from "./PrognoseTemperatur";
 // import { PrognoseRain } from "./PrognoseRain";
 
 
-export function Pronose(){
+export function Pronose() {
 
     const [pronoseData, setPronoseData] = useState([])
 
@@ -14,15 +14,15 @@ export function Pronose(){
             fetch(url).then(res => res.json()).then(data => setPronoseData(data))
         }
         FetchPrognose()
-    },[])
-    console.log("Her er dataen fra prognosen: ",pronoseData);
+    }, [])
+    console.log("Her er dataen fra prognosen: ", pronoseData);
 
-    return(
+    return (
         <>
-            { pronoseData && pronoseData.daily && 
+            {pronoseData && pronoseData.daily &&
                 <>
                     <PrognoseIcon weathercode={pronoseData.daily.weathercode} />
-                    <PrognoseTemperatur temperaturMin={pronoseData.daily.temperature_2m_min} temperaturMax={pronoseData.daily.temperature_2m_max}/>
+                    <PrognoseTemperatur temperaturMin={pronoseData.daily.temperature_2m_min} temperaturMax={pronoseData.daily.temperature_2m_max} />
                 </>
             }
         </>
