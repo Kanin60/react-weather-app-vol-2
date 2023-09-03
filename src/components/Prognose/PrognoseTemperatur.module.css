@@ -1,0 +1,10 @@
+.minMaxTempSection {
+  display: flex;
+  flex-direction: row;
+}
+.minMaxTempSection p {
+  font-size: 6vw;
+}
+.minMaxTempSection svg {
+  margin: 0 10px 0 0;
+}/*# sourceMappingURL=PrognoseTemperatur.module.css.map */

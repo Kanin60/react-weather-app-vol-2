@@ -1,0 +1,42 @@
+.cloudContainer {
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+}
+
+.downWithTheClouds {
+  position: relative;
+}
+
+.bottomCloudsOne {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: -400px;
+  filter: blur(1px);
+  animation: cloud 12s infinite ease-in-out, jump 2s infinite ease-in-out;
+  transform: rotate(180deg);
+}
+
+.bottomCloudsTwo {
+  position: absolute;
+  top: 0;
+  right: -500px;
+  width: 100%;
+  filter: blur(1px);
+  animation: jump 1.5s infinite ease-in-out;
+}
+
+@keyframes jump {
+  0% {
+    translate: 0 0vw;
+  }
+  50% {
+    translate: 0 0.35vw;
+  }
+  100% {
+    translate: 0 0vw;
+  }
+}/*# sourceMappingURL=Clouds.module.css.map */

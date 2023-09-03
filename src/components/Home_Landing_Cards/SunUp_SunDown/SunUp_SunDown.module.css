@@ -1,0 +1,22 @@
+.sunUpDown {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.sunUpDownIcons,
+.prognoseIcon,
+.minMaxTemp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px 20px 0px;
+}
+.sunUpDownIcons svg,
+.prognoseIcon svg,
+.minMaxTemp svg {
+  height: 3rem;
+  width: 100%;
+}/*# sourceMappingURL=SunUp_SunDown.module.css.map */
