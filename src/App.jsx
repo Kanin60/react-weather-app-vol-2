@@ -5,6 +5,8 @@ import { Logo } from './components/Home_Landing_Cards/Logo/Logo'
 import { FetchWeater } from './components/FetchWeather/FetchWeather'
 import { LocationButton } from './components/LocationButton/LocationButton';
 import { FetchLocation } from './components/FetchLocation/FetchLocation';
+import { Pronose } from './components/Prognose/Prognose';
+import { PrognoseIcon } from "./components/Prognose/PrognoseIcon";
 import { BottomClouds } from './components/Bottom_Clouds/Clouds'
 
 function App() {
@@ -16,7 +18,6 @@ function App() {
       <FetchLocation />
       <FetchWeater />
       <LocationButton />
-      <BottomClouds/>
     </>
   )
 }
