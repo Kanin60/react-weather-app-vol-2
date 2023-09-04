@@ -1,5 +1,4 @@
-
-.cloudContainer{
+.cloudContainer {
     display: block;
     overflow: hidden;
     margin: 0;
@@ -8,7 +7,7 @@
 }
 
 .downWithTheClouds {
-    position: relative;   
+    position: relative;
 }
 
 .bottomCloudsOne {
@@ -17,7 +16,7 @@
     top: 0;
     left: -400px;
     filter: blur(1px);
-    animation: cloud 12s infinite ease-in-out, jump 2s infinite ease-in-out;
+    animation: cloud 2s infinite ease-in-out, jump 2s infinite ease-in-out;
     transform: rotate(180deg);
 }
 
@@ -38,10 +37,35 @@
     }
 
     50% {
-        translate: 0 0.35vw;
+        translate: 0 10px;
     }
 
     100% {
         translate: 0 0vw;
     }
 }
+
+// @media (max-width: 319px) {
+//     .bottomCloudsOne {
+//         position: absolute;
+//         top: 0;
+//         right: 0px;
+//         border: 2px solid red;
+//         width: 10;
+//         filter: blur(1px);
+//         animation: jump 1.5s infinite ease-in-out;
+
+
+//     }
+
+//     .bottomCloudsTwo {
+//         position: absolute;
+//         top: 0px;
+//         border: 2px solid;
+//         right: 0px;
+//         width: 10vw;
+//         filter: blur(1px);
+//         animation: jump 1.5s infinite ease-in-out;
+//     }
+
+// }

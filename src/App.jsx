@@ -18,6 +18,9 @@ function App() {
       <FetchLocation />
       <FetchWeater />
       <LocationButton />
+      <Pronose/>
+      <PrognoseIcon/>
+      <BottomClouds/>
     </>
   )
 }
